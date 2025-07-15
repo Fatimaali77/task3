@@ -1,6 +1,6 @@
 body {
  font-family: 'Open Sans', 'Segoe UI', sans-serif;
-  /*font-family: Arial,sans-serif;*/
+
   background: #fff;
 }
 html, body {
@@ -34,8 +34,7 @@ html, body {
    margin-left: 30px; 
 }
 
-.award-title,
-.deadline {
+.award-title,.deadline {
   color: black;
   font-weight: bold;
   margin-bottom: -10px;
@@ -50,7 +49,6 @@ html, body {
 .left h1 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: -10px;
   text-shadow: 1px 1px 3px rgb(255, 251, 251);
   
 }
@@ -58,7 +56,7 @@ html, body {
 .desc {
   font-size: 14px;
   color: #131313;
-  margin-bottom:5px;
+  margin-bottom:-5px;
 }
 
 form input[type="text"],
@@ -107,6 +105,47 @@ input[type="checkbox"] {
   cursor: pointer;
   position: relative;
 }
+.plus-button {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 10px;
+  margin-left: 250px; 
+  margin-top:-10px;
+  vertical-align:middle;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.side-button1 {
+   width: 10px;
+  height: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  margin-left: 300px; 
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.side-button2 {
+   width: 10px;
+  height: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  margin-left: 280px; 
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
 
 input[type="checkbox"]:checked::after {
   content: '✔';
@@ -135,7 +174,6 @@ input[type="checkbox"]:checked::after {
   bottom: 0;
   right: 0;
   width: 0;
-
   border-bottom: 90px solid white;
   border-left: 90px solid transparent;
   overflow:hidden;
