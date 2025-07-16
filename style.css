@@ -186,3 +186,16 @@ input[type="checkbox"]:checked::after {
   border-left: 90px solid transparent;
   overflow:hidden;
 }
+
+
+
+/* Checkbox and label on the left */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  color: white;
+ 
+}
+
+
+
