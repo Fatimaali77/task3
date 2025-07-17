@@ -1,5 +1,5 @@
 body {
- font-family: 'Open Sans', 'Segoe UI', sans-serif;
+ font-family: 'Open Sans', sans-serif;
 
   background: #fff;
 }
@@ -19,7 +19,8 @@ html, body {
   height: 90px;
 }
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
   align-items: center;
   justify-content: flex-start;
   gap: 130px;
@@ -27,11 +28,12 @@ html, body {
   background-color: #8f3333;
   color: white;
   position: relative;    
-  width:100%;
-  padding-left: 60px;
-  padding-right: 0px;
-  box-sizing: border-box;   
+height: 1000px;
+  padding-left: 100px;   
    margin-left: 30px; 
+ 
+   
+   
 }
 
 .award-title,.deadline {
@@ -42,12 +44,12 @@ html, body {
 
 }
 .left {
-  width: 40%;
-  margin-top: -350px; 
+
+margin-bottom: 190px;
 }
 
 .left h1 {
-  font-size: 40px;
+  font-size: 80px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgb(255, 251, 251);
   margin-bottom: 1px;
@@ -55,7 +57,7 @@ html, body {
 }
 
 .desc {
-  font-size: 14px;
+  font-size: 18px;
   color: #131313;
   margin-bottom:-5px;
 }
@@ -63,25 +65,33 @@ html, body {
 form input[type="text"],
 form input[type="email"],
 form textarea {
-  width: 60%;
-  padding: 8px;
+  width: 65%;
+  padding: 12px;
   margin: 8px 0;
+  margin-bottom:2px;
   background-color: transparent;
   border: 1px solid #ceecd9;
   resize: none;
+ font-size: 20px; 
+
 }
+
 form input::placeholder,
 form textarea::placeholder {
   color: rgb(223, 217, 217);
   font-size: 11px; 
-}
+ 
 
+}
 
 .award-title {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 4px;
    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.deadline {
+  font-size: 25px;
 }
 
 .instruction {
@@ -92,9 +102,10 @@ form textarea::placeholder {
 
 form label {
   display: block;
-  margin-top: 5px;
-  margin-bottom: 1px;
-  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  font-size: 12px;
+  margin-left: 10px;
   color: rgb(223, 217, 217);
   
 }
@@ -103,22 +114,24 @@ input[type="checkbox"] {
   appearance: none;
   width: 10px;
   height: 10px;
-  margin-bottom: 0.5px;
+  margin-bottom: 4px;
   background-color: #7B2E2E;  
-  border: 1px solid white;   
+  border: 1px solid rgb(175, 126, 126);   
   border-radius: 1px;
   cursor: pointer;
   position: relative;
+  margin-left: 1px;
 }
 .plus-button {
   width: 10px;
   height: 10px;
   background-color: white;
-  color: black;
+  color: rgb(211, 205, 205);
   border: none;
   font-size: 10px;
   margin-left: 250px; 
   margin-top:-10px;
+  margin-bottom: 4px;
   vertical-align:middle;
 display: flex;
 align-items: center;
@@ -130,9 +143,10 @@ text-align: center;
    width: 10px;
   height: 10px;
   background-color: white;
-  color: rgb(10, 10, 10);
+  color: rgb(212, 204, 204);
   border: none;
-  margin-left: 300px; 
+  margin-left: 480px; 
+    margin-top: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -142,9 +156,10 @@ justify-content: center;
    width: 10px;
   height: 10px;
   background-color: white;
-  color: rgb(10, 10, 10);
+  color: rgb(202, 195, 195);
   border: none;
-  margin-left: 280px; 
+  margin-left: 460px; 
+
 display: flex;
 align-items: center;
 justify-content: center;
@@ -162,7 +177,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .submit-check {
-  margin-top: 20px;
+  margin-top: 35px;
   display: block;
   background-color: rgb(245, 244, 244);
   color: rgb(121, 115, 115);
@@ -171,7 +186,7 @@ input[type="checkbox"]:checked::after {
   border-radius: 2px;
   font-weight: bold;
   border: 1px solid white; 
-  width: 60%;
+  width: 62%;
   font-size: larger;
  
 }
@@ -182,8 +197,8 @@ input[type="checkbox"]:checked::after {
   bottom: 0;
   right: 0;
   width: 0;
-  border-bottom: 90px solid white;
-  border-left: 90px solid transparent;
+  border-bottom: 120px solid white;
+  border-left: 120px solid transparent;
   overflow:hidden;
 }
 
@@ -194,7 +209,7 @@ input[type="checkbox"]:checked::after {
   display: flex;
   align-items: center;
   color: white;
- 
+ margin-top: 10px;
 }
 
 
